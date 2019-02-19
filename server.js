@@ -18,9 +18,9 @@ app.get('/location', (request, response) => {
 
 //route to weather
 app.get('/weather', (request, response) => {
-  const weatherData = getweather(request.query.data);
-  response.send(weatherData);
-}
+  const weatherData = getWeather(request.query.data);
+  response.send(weatherData)
+})
 
 //Errror handler
 function handleError(err, res){
@@ -37,7 +37,7 @@ function searchToLatLong(query){
 }
 
 //search to weatherdata
-function getWeather(query){
+function getWeather(){
   const darkSkyData = require('./data/darksky.json');
   let weatherSummaries = [];
   darkSkyData.daily.data.forEach(day=>{
