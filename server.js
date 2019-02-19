@@ -19,8 +19,8 @@ app.get('/location', (request, response) => {
 //route to weather
 app.get('/weather', (request, response) => {
   const weatherData = getWeather(request.query.data);
-  response.send(weatherData)
-})
+  response.send(weatherData);
+});
 
 //Errror handler
 function handleError(err, res){
@@ -60,5 +60,8 @@ function Weather(day){
   this.forecast = day.summary;
   this.time = new Date(day.time*1000).toString().slice(0,15);
 }
+
+app.use('*', (err, res) => handleError(err, res));
+// app.use('*', (request, response) => response.send(`Sorry, that route does not exist`));
 
 app.listen(PORT, () => console.log(`App is up on ${PORT}`));
