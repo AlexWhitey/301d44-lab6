@@ -1,33 +1,32 @@
 # 301d44-lab6
 
-Number and name of feature: ________________________________
+Number and name of feature: Node, npm, Express, and APIs
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 4 hours
 
-Start time: _____
+Start time: 0915
 
-Finish time: _____
+Finish time: 1300
 
-Actual time needed to complete: _____
+Actual time needed to complete: 4 hours
 
 # City Explorer
 
 **Author**: Christopher Morton/Alexander White
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+I want a user to be able to search by location and get a response back with location
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+For a user to build this app they would need to: - Set up their dev enviroment. - Utilize API's, SQL, JavaScript, and the prebuilt front end. - They would need to host their app as well, possibly using a deployment site like Heroku.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+The application takes a pre built front end and uses a user built backend to deliver and save data. This is done with JavaScript, SQL, PSQL, as well as th following libraries: express, pg, superagent, cors, and dotenv.
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
+02-19-2019 1310 - Chris and I deployed our app
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
